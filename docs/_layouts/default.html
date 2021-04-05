@@ -30,7 +30,7 @@
     {% assign hw4 = 'disabled' %}
     {% for page in site.html_pages %}
       <!--h1>{{ page.url }}</h1-->
-      {% if page.url == '/hw1.html' %}
+      {% if page.url == '/homework1.html' %}
           {% assign hw1 = '' %}
       {% endif %}
       {% if page.url == '/hw2.html' %}
@@ -64,7 +64,7 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="{% if current[1] == 'index.html' or current[1] == %} active {% endif %}"><a href="index.html">Home</a></li>
-            <li class="{{ hw1 }}{% if current[1] == 'hw1.html' %} active {% endif %}"><a href="hw1.html">Homework I</a></li>
+            <li class="{{ hw1 }}{% if current[1] == 'homework1.html' %} active {% endif %}"><a href="hw1.html">Homework I</a></li>
             <li class="{{ hw2 }}{% if current[1] == 'hw2.html' %} active {% endif %}"><a href="hw2.html">Homework II</a></li>
             <li class="{{ hw3 }}{% if current[1] == 'hw3.html' %} active {% endif %}"><a href="hw3.html">Homework III</a></li>
             <li class="{{ hw4 }}{% if current[1] == 'hw4.html' %} active {% endif %}"><a href="hw4.html">Homework IV</a></li>
