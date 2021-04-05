@@ -64,10 +64,10 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="{% if current[1] == 'index.html' or current[1] == %} active {% endif %}"><a href="index.html">Home</a></li>
-            <li class="{{ proposalClass }}{% if current[1] == 'HW1.html' %} active {% endif %}"><a href="HW1.html">Homework I</a></li>
-            <li class="{{ statusClass }}{% if current[1] == 'HW2.html' %} active {% endif %}"><a href="HW2.html">Homework II</a></li>
-            <li class="{{ finalClass }}{% if current[1] == 'HW3.html' %} active {% endif %}"><a href="HW3.html">Homework III</a></li>
-            <li class="{{ finalClass }}{% if current[1] == 'HW4.html' %} active {% endif %}"><a href="HW4.html">Homework IV</a></li>
+            <li class="{{ hw1 }}{% if current[1] == 'HW1.html' %} active {% endif %}"><a href="HW1.html">Homework I</a></li>
+            <li class="{{ hw2 }}{% if current[1] == 'HW2.html' %} active {% endif %}"><a href="HW2.html">Homework II</a></li>
+            <li class="{{ hw3 }}{% if current[1] == 'HW3.html' %} active {% endif %}"><a href="HW3.html">Homework III</a></li>
+            <li class="{{ hw4 }}{% if current[1] == 'HW4.html' %} active {% endif %}"><a href="HW4.html">Homework IV</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
