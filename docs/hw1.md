@@ -10,7 +10,7 @@ My homework 1 is done under the Optix API.
 ## Special Implementation
 
 I add a simple implementation to achieve the depth of view effect. Shown below:
-<div style="text-align:center"><img src="figures/hw1/fig1.png" width="598" height="334"  /></div>
+<div style="text-align:center"><img src="figures/hw1/fig1.png" width="897" height="501"  /></div>
 
 You can see the balls in the front and black are out of focus and have been blurred.
 
