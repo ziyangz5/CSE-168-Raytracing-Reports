@@ -24,19 +24,23 @@
   <body>
     {% include mathjax.html %}
     {% assign current = page.url | downcase | split: '/' %}
-    {% assign statusClass = 'disabled' %}
-    {% assign proposalClass = 'disabled' %}
-    {% assign finalClass = 'disabled' %}
+    {% assign hw1 = 'disabled' %}
+    {% assign hw2 = 'disabled' %}
+    {% assign hw3 = 'disabled' %}
+    {% assign hw4 = 'disabled' %}
     {% for page in site.html_pages %}
       <!--h1>{{ page.url }}</h1-->
-      {% if page.url == '/proposal.html' %}
-          {% assign proposalClass = '' %}
+      {% if page.url == '/hw1.html' %}
+          {% assign hw1 = '' %}
       {% endif %}
-      {% if page.url == '/status.html' %}
-          {% assign statusClass = '' %}
+      {% if page.url == '/hw2.html' %}
+          {% assign hw2 = '' %}
       {% endif %}
-      {% if page.url == '/final.html' %}
-          {% assign finalClass = '' %}
+      {% if page.url == '/hw3.html' %}
+          {% assign hw3 = '' %}
+      {% endif %}
+      {% if page.url == '/hw4.html' %}
+        {% assign hw4 = '' %}
       {% endif %}
     {% endfor %}
     <!--h2>{% if current[1] == %} 5 {% endif %}</h2-->
