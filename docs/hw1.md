@@ -7,7 +7,11 @@ title: Homework 1
 
 My homework 1 is done under the Optix API.
 
-## Special Implementation
+# Acceleration 
+
+Since using optix, I implemented the bounding box function and then activate the "Trbvh". With the acceleration structure, the rendering of a single frame of the scene 7 costs 0.0723 seconds. Without that, it costs 0.0887 seconds.
+
+# Special Implementation
 
 I add a simple implementation to achieve the depth of view effect. Shown below:
 <div style="text-align:center"><img src="figures/hw1/fig1.png" width="897" height="501"  /></div>
