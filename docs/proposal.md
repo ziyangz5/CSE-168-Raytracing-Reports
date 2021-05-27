@@ -17,4 +17,4 @@ If I have enough time, I might try to add environment lighting.
 
 Now, I added a simple BSDF that assume all out-going rays have same throughput. I use Schlick’s approximation I handle the probability of refraction and total internal reflection. Currently, I don't implement the importance sampling, so the noise is high. The image below is rendered under $spp = 4096$. Although the current BSDF is simple, the refraction and caustic are presented pretty well.
 
-<div style="text-align:center"><img src="figures/proposal/glass.png" width="594" height="295"  /></div>
+<div style="text-align:center"><img src="figures/proposal/glass.png" width="480" height="480"  /></div>
