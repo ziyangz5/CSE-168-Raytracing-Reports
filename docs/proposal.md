@@ -5,19 +5,16 @@ title: Proposal
 
 # Overall
 
-My homework 1 is done under the Optix API.
+As stated in my project proposal, I choose the option "Extending Path Tracer with Modern Algorithms". My plan is to implement the below features: 
 
-# Acceleration 
+1. GGX BSDF based on this paper: https://www.cs.cornell.edu/~srm/publications/EGSR07-btdf.pdf
+2. Texture mapping.
+3. Photon  mapping
 
-Since using optix, I implemented the bounding box function and then activate the "Trbvh". With the acceleration structure, the rendering of a single frame of the scene 7 costs 0.0723 seconds. Without that, it costs 0.0887 seconds.
+If I have enough time, I might try to add environment lighting.
 
-# Special Implementation
+# Milestone
 
-I add a simple implementation to achieve the depth of view effect. Shown below:
-<div style="text-align:center"><img src="figures/hw1/fig1.png" width="897" height="501"  /></div>
+Now, I added a simple BSDF that assume all out-going rays have same throughput. I use Schlick’s approximation I handle the probability of refraction and total internal reflection. Currently, I don't implement the importance sampling, so the noise is high. The image below is rendered under $spp = 4096$. Although the current BSDF is simple, the refraction and caustic are presented pretty well.
 
-You can see the balls in the front and black are out of focus and have been blurred.
-
-My implementation is using multiple sample rays. Instead of sending one ray from the "eye" position, I make the eye position as a center of a ball with radian $r$, and sample different starting points on that ball to make sample rays. The sampling method is rejection sampling. Then, I send 200 rays for each pixels and average the color.
-
-<div style="text-align:center"><img src="figures/hw1/fig2.png" width="594" height="295"  /></div>
+<div style="text-align:center"><img src="figures/proposal/glass.png" width="594" height="295"  /></div>
